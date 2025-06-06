@@ -1,12 +1,61 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import './App.css'; // o './App.css'
+import ropaImg from './assets/Ropa.png';
 
-function App() {
-  
 
-  return 
-}
 
-export default App
+
+const Login: React.FC = () => {
+  return (
+    
+      <div className="DOM">
+        <div className="izq">
+        <h1 className="GlobalW">Globar Wear</h1> 
+        <h3>Inicio de Sesion</h3>
+       
+        <div className="Form">
+          <div>
+            <label h className="Email">Email</label>
+            <input
+              type="email"
+              id="email"
+              className="email"/>
+          </div>
+
+          <div>
+            <label  className="label">Contraseña</label>
+            <input
+              type="password"
+              id="password"
+              className="password"
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="submit"
+          >
+            Iniciar sesión
+          </button>
+        </div>
+        </div>
+        
+      
+
+    
+      <div className="Panel-derecho">
+      <img
+          src={ropaImg}
+          
+          className="img"
+        />
+      </div>
+      </div>
+     
+       
+       
+    
+  );
+};
+
+export default Login;
