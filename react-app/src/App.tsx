@@ -15,28 +15,17 @@ const Login: React.FC = () => {
        
         <div className="Form">
           <div>
-            <label h className="Email">Email</label>
-            <input
-              type="email"
-              id="email"
-              className="email"/>
+            <label h className="Email"><strong>Email</strong></label>
+                <input type="email" id="email" className="email"/>
           </div>
 
           <div>
-            <label  className="label">Contraseña</label>
+            <label  className="label"><strong>Contraseña</strong></label>
             <input
-              type="password"
-              id="password"
-              className="password"
-            />
+              type="password" id="password" className="password"/>
           </div>
 
-          <button
-            type="submit"
-            className="submit"
-          >
-            Iniciar sesión
-          </button>
+          <button type="submit" className="submit"> Iniciar sesión </button>
         </div>
         </div>
         
